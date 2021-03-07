@@ -40,7 +40,7 @@ def expression(user_input):
             print('Invalid expression')
             processing_request()
     if user_input.isalpha():
-        return_variable(user_input)
+        return return_variable(user_input)
     elif (user_input[0] not in ('-', '+', '(', ')') and not user_input[0].isalnum()) or (
             user_input[-1] not in (')',) and not user_input[-1].isalnum()):
         print('Invalid expression')
